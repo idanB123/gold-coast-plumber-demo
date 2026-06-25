@@ -397,6 +397,11 @@ export default function Home() {
               >
                 <input type="hidden" name="form-name" value="quote-request" />
                 <input type="hidden" name="bot-field" />
+                <input
+                  type="hidden"
+                  name="subject"
+                  value="New plumber lead from Harbor Flow Plumbing demo"
+                />
                 <div className="grid gap-4 sm:grid-cols-2">
                   <label className="grid gap-2 text-sm text-stone-300">
                     Full name
