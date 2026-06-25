@@ -4,15 +4,16 @@ import { SmoothScroll } from "@/components/smooth-scroll";
 import { ChatbaseWidget } from "@/components/chatbase-widget";
 
 export const metadata: Metadata = {
-  title: "Harbor Flow Plumbing | Gold Coast plumber demo",
+  title: "Harbor Flow Plumbing | Gold Coast Plumber",
   description:
-    "Premium Gold Coast plumber demo site built with Next.js, premium typography, smooth motion, Netlify Forms markup, Cal.com booking embed, and a live chatbot placeholder.",
-  metadataBase: new URL("https://example.com"),
+    "Harbor Flow Plumbing delivers blocked drain repairs, hot water service, leak detection, gas fitting and emergency plumbing across the Gold Coast.",
+  metadataBase: new URL("https://verdant-phoenix-125e53.netlify.app"),
   openGraph: {
-    title: "Harbor Flow Plumbing | Gold Coast plumber demo",
+    title: "Harbor Flow Plumbing | Gold Coast Plumber",
     description:
-      "Premium, conversion-first local service website demo for a Gold Coast plumber.",
+      "Reliable Gold Coast plumbing for blocked drains, hot water, leaks, gas and urgent callouts.",
     type: "website",
+    url: "https://verdant-phoenix-125e53.netlify.app",
   },
 };
 
@@ -23,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full scroll-smooth antialiased">
-      <body className="min-h-full bg-stone-950 text-stone-100">
+      <body className="min-h-full bg-[var(--background)] text-[var(--foreground)]">
         <SmoothScroll />
         {children}
         <ChatbaseWidget />

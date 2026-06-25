@@ -2,24 +2,25 @@ import Link from "next/link";
 
 export default function ThanksPage() {
   return (
-    <main className="min-h-screen bg-stone-950 text-stone-100">
+    <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
       <div className="shell flex min-h-screen items-center justify-center py-16">
-        <div className="glass max-w-2xl rounded-[2rem] p-8 text-center sm:p-12">
-          <p className="section-eyebrow">Quote request received</p>
+        <div className="editorial-panel max-w-2xl rounded-[2rem] p-8 text-center sm:p-12">
+          <p className="section-kicker">Request received</p>
           <h1 className="display-font mt-6 text-4xl font-semibold tracking-tight sm:text-5xl">
-            Thanks — we’ve got your job details.
+            Thanks — we&apos;ll be in touch shortly.
           </h1>
-          <p className="mt-5 text-lg leading-8 text-stone-300">
-            This demo thank-you page is wired for a Netlify Forms handoff. In a live
-            production setup, the plumbing team would receive the lead by email and follow
-            up to confirm timing.
+          <p className="mt-5 text-lg leading-8 text-[var(--muted-strong)]">
+            Harbor Flow Plumbing has your details. If the job is urgent, call us now and
+            we&apos;ll help you straight away.
           </p>
-          <Link
-            href="/"
-            className="mt-8 inline-flex rounded-full bg-[#d6a867] px-6 py-3 font-semibold text-stone-950 transition hover:bg-[#e2bb86]"
-          >
-            Back to the homepage
-          </Link>
+          <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Link href="/" className="button-primary">
+              Back to the homepage
+            </Link>
+            <a href={`tel:${"+617****9274"}`} className="button-secondary">
+              Call (07) 5603 9274
+            </a>
+          </div>
         </div>
       </div>
     </main>
